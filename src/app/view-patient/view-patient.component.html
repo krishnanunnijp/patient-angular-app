@@ -1,0 +1,27 @@
+<app-navbar-patient></app-navbar-patient>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <table class="table table-bordered border-primary">
+                        <thead>
+                        <tr scope="row">
+                            <th scope="col">name</th>
+                            <th scope="col">disease</th>
+                            <th scope="col">doctor</th>
+                        </tr></thead>
+                        <tbody>
+                        <tr *ngFor="let i of data" scope="row">
+                            <td scope="col">{{i.name}}</td>
+                            <td scope="col">{{i.disease}}</td>
+                            <td scope="col">{{i.doctor}}</td>
+                        </tr></tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+  </div>
