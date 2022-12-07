@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AddPatientComponent } from './add-patient/add-patient.component';
 import { ViewPatientComponent } from './view-patient/view-patient.component';
-import { NavbarPatientComponent } from './navbar-patient/navbar-patient.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import{HttpClientModule}from '@angular/common/http'
@@ -24,7 +23,6 @@ const myRoute:Routes=[
     AppComponent,
     AddPatientComponent,
     ViewPatientComponent,
-    NavbarPatientComponent
   ],
   imports: [
     BrowserModule,
