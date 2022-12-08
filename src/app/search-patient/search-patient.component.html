@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-4">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="name" class="form-label">Name</label>
+                    <input name="name" [(ngModel)]="name" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+<button (click)="searchE()" class="btn btn-success">search</button>
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <div class="row g-3 mt-4">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                <table class="table table-bordered border-primary">
+                                    <thead>
+                                    <tr scope="row" *ngIf="data.length!=0">
+                                        <th scope="col">name</th>
+                                        <th scope="col">disease</th>
+                                        <th scope="col">doctor</th>
+                                    </tr></thead>
+                                    <tbody>
+                                    <tr *ngFor="let i of data" scope="row">
+                                        <td scope="col">{{i.name}}</td>
+                                        <td scope="col">{{i.disease}}</td>
+                                        <td scope="col">{{i.doctor}}</td>
+                                    </tr></tbody>
+                                </table>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

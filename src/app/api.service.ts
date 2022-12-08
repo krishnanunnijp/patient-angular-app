@@ -14,4 +14,7 @@ export class ApiService {
   fetchPatient=()=>{
     return this.http.get("http://localhost:8080/view")
   }
+  searchPatient=(value:any)=>{
+    return this.http.post("http://localhost:8080/search",value)
+  }
 }
