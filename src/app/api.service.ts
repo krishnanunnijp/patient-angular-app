@@ -17,4 +17,7 @@ export class ApiService {
   searchPatient=(value:any)=>{
     return this.http.post("http://localhost:8080/search",value)
   }
+  deletePatient=(value:any)=>{
+    return this.http.post("http://localhost:8080/delete",value)
+  }
 }
